@@ -1,1 +1,275 @@
-<H1>Test</H1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Erkam Uzunçayır – Game Development Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="social-links header-social">
+				<a href="mailto:erkamuzuncayir@gmail.com" aria-label="Email">Email</a>
+				<a href="https://linkedin.com/in/erkamuzuncayir" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+				<a href="https://github.com/erkamuzuncayir" target="_blank" aria-label="GitHub">GitHub</a>
+			</div>
+
+			<h1>Hüseyin Erkam Uzunçayır</h1>
+			<h2>Game Programmer</h2>
+		</header>
+
+		<p>
+			My approach to game development is rooted in system thinking — from custom ECS implementations to
+			procedural
+			generation and data-driven tools. Whether it's building a tool for a designer or optimizing 10,000 units
+			in motion,
+			I love solving complex problems through smart code.
+		</p>
+		<p>
+			In this portfolio, I first showcase professionally published games and applications I contributed to.
+			Then I
+			present smaller, focused prototypes that demonstrate my technical explorations and system design skills.
+		</p>
+		</header>
+
+		<section class="project">
+			<div class="carousel-wrapper">
+				<input type="radio" name="rapidcarousel" id="rr_slide1" checked />
+				<input type="radio" name="rapidcarousel" id="rr_slide2" />
+				<input type="radio" name="rapidcarousel" id="rr_slide3" />
+
+				<div class="carousel">
+					<div class="carousel-slides">
+						<img src="images/rapid_1.png" alt="Rapid Render 1" />
+						<img src="images/rapid_2.png" alt="Rapid Render 2" />
+						<img src="images/rapid_3.png" alt="Rapid Render 3" />
+					</div>
+				</div>
+
+				<div class="carousel-arrows rr_slide1-arrows">
+					<label for="rr_slide3" class="arrow left">&#10094;</label>
+					<label for="rr_slide2" class="arrow right">&#10095;</label>
+				</div>
+				<div class="carousel-arrows rr_slide2-arrows">
+					<label for="rr_slide1" class="arrow left">&#10094;</label>
+					<label for="rr_slide3" class="arrow right">&#10095;</label>
+				</div>
+				<div class="carousel-arrows rr_slide3-arrows">
+					<label for="rr_slide2" class="arrow left">&#10094;</label>
+					<label for="rr_slide1" class="arrow right">&#10095;</label>
+				</div>
+
+				<div class="carousel-controls">
+					<label for="rr_slide1"></label>
+					<label for="rr_slide2"></label>
+					<label for="rr_slide3"></label>
+				</div>
+			</div>
+
+			<h2>Rapid Render</h2>
+			<h3>SugAR Technology | 2024</h3>
+			<h4>Cross-Platform 3D Interior Design Software</h4>
+			<ul>
+				<li>Analyzed existing Unity project structure and authored a detailed improvement report.</li>
+				<li>Recreated the render settings UI, improving user control and interaction with pop-ups, sliders, and
+					dynamic features based on new design.</li>
+				<li>Developed UI integration with procedural window generation system and detailed object metadata view.
+				</li>
+				<li>Created an interactive screensaver that pulled render history and used a custom blur shader for a
+					polished presentation.</li>
+			</ul>
+			<h4>Stack</h4>
+			<ul>
+				<li>Unity</li>
+				<li>C#</li>
+				<li>HLSL</li>
+			</ul>
+		</section>
+
+		<section class="project">
+			<video controls src="videos/metahorse-unity.mp4"></video>
+			<h2>Metahorse Unity</h2>
+			<h3>Hungri Games | 2023–2024</h3>
+			<h4>Horse-Racing RPG for Mobile Platforms</h4>
+			<ul>
+				<li>Developed core gameplay systems including in-game events, quests, and achievements with a
+					data-driven architecture using Type design.</li>
+				<li>Created a Google Sheets-based design workflow integrated into Unity for real-time balancing and fast
+					iteration.</li>
+				<li>Designed class progression, stats, and skill interactions entirely in spreadsheets and automated the
+					import pipeline via custom tools.</li>
+			</ul>
+			<h4>Stack</h4>
+			<ul>
+				<li>Unity</li>
+				<li>C#</li>
+				<li>Google Workspace</li>
+			</ul>
+		</section>
+
+		<section class="project">
+			<video controls src="videos/stutengarden.mp4"></video>
+			<h2>Stutengarden</h2>
+			<h3>Hungri Games | 2023–2024</h3>
+			<h4>Open-World Action-Adventure Game for Browser Platforms</h4>
+			<ul>
+				<li>Directed a 4-member team through full development of a 3D browser game.</li>
+				<li>Built scalable gameplay architecture using design patterns like Type, State, and Observer.</li>
+				<li>Delivered polished movement through a custom 3D character controller and implemented systems like
+					horse catching and quest progression.</li>
+				<li>Applied various optimization techniques (e.g. texture compression, batching, material instancing) to
+					significantly reduce load times and runtime overhead.</li>
+			</ul>
+			<h4>Stack</h4>
+			<ul>
+				<li>Unity</li>
+				<li>C#</li>
+				<li>Google Workspace</li>
+			</ul>
+		</section>
+
+		<section class="project hypercasual">
+			<div class="carousel-text-container" style="display: flex; gap: 2rem; align-items: flex-start;">
+				<div class="carousel-images" style="flex: 1">
+					<div class="carousel-wrapper">
+						<input type="radio" name="hypercarousel" id="hc_slide1" checked />
+						<input type="radio" name="hypercarousel" id="hc_slide2" />
+						<input type="radio" name="hypercarousel" id="hc_slide3" />
+						<input type="radio" name="hypercarousel" id="hc_slide4" />
+
+						<div class="carousel">
+							<div class="carousel-slides">
+								<img src="images/hyper1.png" alt="Hypercasual 1" />
+								<img src="images/hyper2.png" alt="Hypercasual 2" />
+								<img src="images/hyper3.png" alt="Hypercasual 3" />
+								<img src="images/hyper4.png" alt="Hypercasual 4" />
+							</div>
+						</div>
+
+						<div class="carousel-arrows">
+							<label for="hc_slide4" class="arrow left">&#10094;</label>
+							<label for="hc_slide2" class="arrow right">&#10095;</label>
+						</div>
+						<div class="carousel-arrows" id="arrows-hc1">
+							<label for="hc_slide4" class="arrow left">&#10094;</label>
+							<label for="hc_slide2" class="arrow right">&#10095;</label>
+						</div>
+						<div class="carousel-arrows" id="arrows-hc2">
+							<label for="hc_slide1" class="arrow left">&#10094;</label>
+							<label for="hc_slide3" class="arrow right">&#10095;</label>
+						</div>
+						<div class="carousel-arrows" id="arrows-hc3">
+							<label for="hc_slide2" class="arrow left">&#10094;</label>
+							<label for="hc_slide4" class="arrow right">&#10095;</label>
+						</div>
+						<div class="carousel-arrows" id="arrows-hc4">
+							<label for="hc_slide3" class="arrow left">&#10094;</label>
+							<label for="hc_slide1" class="arrow right">&#10095;</label>
+						</div>
+
+						<div class="carousel-controls">
+							<label for="hc_slide1"></label>
+							<label for="hc_slide2"></label>
+							<label for="hc_slide3"></label>
+							<label for="hc_slide4"></label>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-text" style="flex: 1">
+					<h2>Hypercasual Mobile Game Prototypes</h2>
+					<h3>Fauderfield | 2022–2023</h3>
+					<ul>
+						<li>Developed multiple hyper-casual titles in Unity, contributing to both programming and
+							gameplay design.</li>
+						<li>Designed and balanced levels with a focus on mobile gameplay pacing and user engagement.
+						</li>
+						<li>Received internal training on algorithms and software design patterns; participated in
+							ideation sessions for new game concepts.</li>
+					</ul>
+					<h4>Stack</h4>
+					<ul>
+						<li>Unity</li>
+						<li>C#</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="project">
+			<video controls src="videos/local-avoidance-10000-units-pathfinding.mp4"></video>
+			<h2>Real-Time Pathfinding with Local Avoidance</h2>
+			<h3>Ongoing Project</h3>
+			<ul>
+				<li>Simulated 10,000+ units navigating dynamically using a custom vector-field pathfinding system.</li>
+				<li>Implemented local avoidance via physics-informed steering to prevent congestion.</li>
+				<li>Optimized data structures for performance using custom ECS solution and Unity's Native Collections.
+				</li>
+			</ul>
+			<h4>Stack</h4>
+			<ul>
+				<li>Unity</li>
+				<li>C#</li>
+			</ul>
+		</section>
+
+		<section class="project">
+			<video controls src="videos/procedural-tile-generation.mp4"></video>
+			<h2>Procedural 2D Tile Generation</h2>
+			<h3>Personal Project</h3>
+			<ul>
+				<li>Implemented grid-based tile generation logic with modular control over biome and terrain types.</li>
+				<li>Enabled instant runtime generation and visual feedback using Unity's Tilemap package and custom
+					solutions.</li>
+				<li>Focused on clean code architecture for scalability in larger procedural world systems.</li>
+			</ul>
+			<h4>Stack</h4>
+			<ul>
+				<li>Unity</li>
+				<li>C#</li>
+			</ul>
+		</section>
+
+		<section class="project">
+			<video controls src="videos/turn-based-astar-pathfinding.mp4"></video>
+			<h2>Turn-Based Grid A* Pathfinding</h2>
+			<h3>Personal Project</h3>
+			<ul>
+				<li>Developed A* pathfinding on a hexagonal grid with movement restrictions and turn-based logic.</li>
+				<li>Implemented unit actions including movement, attack, and wait states.</li>
+				<li>Designed a flexible grid system supporting various tile types and obstacles.</li>
+			</ul>
+			<h4>Stack</h4>
+			<ul>
+				<li>Unity</li>
+				<li>C#</li>
+			</ul>
+		</section>
+
+		<section class="contact" id="contact">
+			<h2>Contact</h2>
+			<p>
+				If you want to work together or have any questions about my portfolio, feel free to reach out.
+			</p>
+			<ul>
+				<li><a href="mailto:erkamuzuncayir@gmail.com">Email</a></li>
+				<li><a href="https://linkedin.com/in/erkamuzuncayir" target="_blank"
+						rel="noopener">LinkedIn</a></li>
+				<li><a href="https://github.com/erkamuzuncayir" target="_blank"
+						rel="noopener">GitHub</a></li>
+			</ul>
+		</section>
+
+		<footer style="text-align: center;">
+			<p>© 2025 Hüseyin Erkam Uzunçayır</p>
+		</footer>
+	</div>
+</body>
+
+</html>
