@@ -5,8 +5,11 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Erkam Uzunçayır – Game Development Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,25 +21,112 @@
 				<a href="https://linkedin.com/in/erkamuzuncayir" target="_blank" aria-label="LinkedIn">LinkedIn</a>
 				<a href="https://github.com/erkamuzuncayir" target="_blank" aria-label="GitHub">GitHub</a>
 			</div>
-
 			<h1>Hüseyin Erkam Uzunçayır</h1>
 			<h2>Game Programmer</h2>
 		</header>
-
 		<p>
-			My approach to game development is rooted in system thinking — from custom ECS implementations to
+			My approach to game development is rooted in <em>system thinking</em> — from custom ECS implementations to
 			procedural
-			generation and data-driven tools. Whether it's building a tool for a designer or optimizing 10,000 units
-			in motion,
+			generation and data-driven tools. Whether it's building a tool for a designer or optimizing <strong>10,000
+				units
+				in motion</strong>,
 			I love solving complex problems through smart code.
 		</p>
 		<p>
-			In this portfolio, I first showcase professionally published games and applications I contributed to.
+			In this portfolio, I first showcase <strong>professionally published games and applications</strong> I
+			contributed to.
 			Then I
-			present smaller, focused prototypes that demonstrate my technical explorations and system design skills.
+			present <strong>smaller, focused prototypes</strong> that demonstrate my technical explorations and system
+			design skills.
 		</p>
 		</header>
-
+		<section class="project">
+			<h2>My Journey to Become a C/C++ Game/Engine Developer</h2>
+			<h3>Personal Project | 2025</h3>
+			<h4> <strong>Repo:</strong>
+				<a href="https://github.com/erkamuzuncayir/the-journey-to-become-cpp-game-engine-developer"
+					target="_blank">
+					The Journey to Become a C/C++ Game/Engine Developer
+				</a>
+			</h4>
+			<p>
+				This is a GitHub repository where I document my personal journey of mastering C/C++ for game and engine
+				development. It serves as a <em>transparent diary</em> of my progress, learning resources, and hands-on
+				projects
+				- showing why I chose to build <strong>foundational knowledge (both high and low level)</strong>, share
+				code samples, and
+				collaborate with anyone else following a similar path. </p>
+			<ul>
+				<li>Solved exercises and projects from <cite>Introduction to Computing Systems: From Bits &amp; Gates to
+						C/C++ &amp; Beyond</cite> to build a solid low-level foundation (<a
+						href="https://github.com/erkamuzuncayir/solutions-of-introduction-to-computing-systems"
+						target="_blank">Solutions Repo</a>).</li>
+				<li>Completed <cite>C Programming: A Modern Approach</cite> to strengthen my C fundamentals (<a
+						href="https://github.com/erkamuzuncayir/c-programming-a-modern-approach"
+						target="_blank">Solutions Repo</a>).</li>
+				<li>Currently working through exercises in <cite>Computer Systems: A Programmer’s Perspective</cite> (<a
+						href="https://github.com/erkamuzuncayir/computer-systems-a-programmers-perspective"
+						target="_blank">Solutions Repo</a>).</li>
+				<li>Currently working through <cite>C++ Primer, 5th Edition</cite> chapter exercises (<a
+						href="https://github.com/erkamuzuncayir/cpp-primer" target="_blank">Solutions Repo</a>).</li>
+				<li>Currently developing and optimizing a <strong>custom ECS</strong> in Unity for the Gate Survivors
+					project, improving
+					large-scale performance.</li>
+				<li>Planning to study <cite>Real-Time 3D Rendering with DirectX® and HLSL</cite> to guide the future
+					development of a basic 3D <strong>DirectX</strong> game engine prototype—aiming to eventually
+					implement
+					a minimal
+					<em>render loop, mesh loader, and shader setup</em>.
+				</li>
+			</ul>
+		</section>
+		<section class="project">
+			<video controls src="videos/children-of-abyss.mp4"></video>
+			<h2>Children of Abyss</h2>
+			<h3>Freelance Contract | 2025</h3>
+			<h4>A 3D Sandbox Game Inspired by Tiny Glade, Focused on World Sculpting</h4>
+			<ul>
+				<li>
+					Built a unified camera system supporting pan, rotation, and zoom with both <b>touchscreen</b> and
+					<b>keyboard/mouse</b> inputs.
+					<ul>
+						<li>Touch gestures and mouse/keyboard controls feed into a shared smoothing system for
+							consistent camera behavior.</li>
+					</ul>
+				</li>
+				<li>
+					Implemented a hill creation system that generates separate hill meshes from terrain's heightmap,
+					<em>avoiding direct terrain modification</em>.
+					<ul>
+						<li>Meshes are sampled from terrain heightmap and optimized for reuse, enabling efficient
+							creation of many independent hills.</li>
+					</ul>
+				</li>
+				<li>
+					Enabled real-time hill modification, allowing height and slope to be adjusted independently
+					post-creation.
+					<ul>
+						<li>Height and slope changes are applied per vertex with recalculated normals for smooth
+							visuals.</li>
+					</ul>
+				</li>
+				<li>
+					Authored a custom <code>HLSL</code> shader for hills using <em>unlit triplanar projection with
+						slope-based blending</em>
+					and optional overlay.
+					<ul>
+						<li>Supports sand/rock textures, seamless blending, and runtime overlay effects with tunable
+							shader parameters.</li>
+					</ul>
+				</li>
+			</ul>
+			<h4>Stack</h4>
+			<ul>
+				<li><code>Unity</code></li>
+				<li><code>C#</code></li>
+				<li><code>HLSL</code></li>
+			</ul>
+		</section>
 		<section class="project">
 			<div class="carousel-wrapper">
 				<input type="radio" name="rapidcarousel" id="rr_slide1" checked />
@@ -70,27 +160,28 @@
 					<label for="rr_slide3"></label>
 				</div>
 			</div>
-
 			<h2>Rapid Render</h2>
 			<h3>SugAR Technology | 2024</h3>
 			<h4>Cross-Platform 3D Interior Design Software</h4>
 			<ul>
-				<li>Analyzed existing Unity project structure and authored a detailed improvement report.</li>
+				<li>Analyzed existing Unity project structure and authored a <strong>detailed improvement
+						report</strong>.</li>
 				<li>Recreated the render settings UI, improving user control and interaction with pop-ups, sliders, and
 					dynamic features based on new design.</li>
 				<li>Developed UI integration with procedural window generation system and detailed object metadata view.
 				</li>
-				<li>Created an interactive screensaver that pulled render history and used a custom blur shader for a
+				<li>Created an interactive screensaver that pulled render history and used a custom <code>HLSL</code>
+					blur
+					shader for a
 					polished presentation.</li>
 			</ul>
 			<h4>Stack</h4>
 			<ul>
-				<li>Unity</li>
-				<li>C#</li>
-				<li>HLSL</li>
+				<li><code>Unity</code></li>
+				<li><code>C#</code></li>
+				<li><code>HLSL</code></li>
 			</ul>
 		</section>
-
 		<section class="project">
 			<video controls src="videos/metahorse-unity.mp4"></video>
 			<h2>Metahorse Unity</h2>
@@ -98,41 +189,45 @@
 			<h4>Horse-Racing RPG for Mobile Platforms</h4>
 			<ul>
 				<li>Developed core gameplay systems including in-game events, quests, and achievements with a
-					data-driven architecture using Type design.</li>
-				<li>Created a Google Sheets-based design workflow integrated into Unity for real-time balancing and fast
+					data-driven architecture using the <code>Type</code> design pattern.</li>
+				<li>Created a <b>Google Sheets-based</b> design workflow integrated into Unity for real-time balancing
+					and fast
 					iteration.</li>
-				<li>Designed class progression, stats, and skill interactions entirely in spreadsheets and automated the
-					import pipeline via custom tools.</li>
+				<li>Designed class progression, stats, and skill interactions entirely in spreadsheets and
+					<strong>automated
+						the
+						import pipeline</strong> via custom tools.</li>
 			</ul>
 			<h4>Stack</h4>
 			<ul>
-				<li>Unity</li>
-				<li>C#</li>
-				<li>Google Workspace</li>
+				<li><code>Unity</code></li>
+				<li><code>C#</code></li>
+				<li><code>Google Workspace</code></li>
 			</ul>
 		</section>
-
 		<section class="project">
 			<video controls src="videos/stutengarden.mp4"></video>
 			<h2>Stutengarden</h2>
 			<h3>Hungri Games | 2023–2024</h3>
 			<h4>Open-World Action-Adventure Game for Browser Platforms</h4>
 			<ul>
-				<li>Directed a 4-member team through full development of a 3D browser game.</li>
-				<li>Built scalable gameplay architecture using design patterns like Type, State, and Observer.</li>
+				<li><strong>Directed a 4-member team</strong> through full development of a 3D browser game.</li>
+				<li>Built scalable gameplay architecture using design patterns like <code>Type</code>,
+					<code>State</code>,
+					and <code>Observer</code>.</li>
 				<li>Delivered polished movement through a custom 3D character controller and implemented systems like
 					horse catching and quest progression.</li>
-				<li>Applied various optimization techniques (e.g. texture compression, batching, material instancing) to
+				<li>Applied various optimization techniques (e.g. <em>texture compression, batching, material
+						instancing</em>) to
 					significantly reduce load times and runtime overhead.</li>
 			</ul>
 			<h4>Stack</h4>
 			<ul>
-				<li>Unity</li>
-				<li>C#</li>
-				<li>Google Workspace</li>
+				<li><code>Unity</code></li>
+				<li><code>C#</code></li>
+				<li><code>Google Workspace</code></li>
 			</ul>
 		</section>
-
 		<section class="project hypercasual">
 			<div class="carousel-text-container" style="display: flex; gap: 2rem; align-items: flex-start;">
 				<div class="carousel-images" style="flex: 1">
@@ -180,78 +275,99 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="carousel-text" style="flex: 1">
 					<h2>Hypercasual Mobile Game Prototypes</h2>
 					<h3>Fauderfield | 2022–2023</h3>
 					<ul>
 						<li>Developed multiple hyper-casual titles in Unity, contributing to both programming and
 							gameplay design.</li>
-						<li>Designed and balanced levels with a focus on mobile gameplay pacing and user engagement.
+						<li>Designed and balanced levels with a focus on <em>mobile gameplay pacing and user
+								engagement</em>.
 						</li>
 						<li>Received internal training on algorithms and software design patterns; participated in
 							ideation sessions for new game concepts.</li>
 					</ul>
 					<h4>Stack</h4>
 					<ul>
-						<li>Unity</li>
-						<li>C#</li>
+						<li><code>Unity</code></li>
+						<li><code>C#</code></li>
 					</ul>
 				</div>
 			</div>
 		</section>
-
-
 		<section class="project">
 			<video controls src="videos/local-avoidance-10000-units-pathfinding.mp4"></video>
 			<h2>Real-Time Pathfinding with Local Avoidance</h2>
-			<h3>Ongoing Project</h3>
+			<h3>Ongoing Project | 2025</h3>
 			<ul>
-				<li>Simulated 10,000+ units navigating dynamically using a custom vector-field pathfinding system.</li>
+				<li>Simulated <strong>10,000+ units</strong> navigating dynamically using a custom <em>vector-field
+						pathfinding</em> system.</li>
 				<li>Implemented local avoidance via physics-informed steering to prevent congestion.</li>
-				<li>Optimized data structures for performance using custom ECS solution and Unity's Native Collections.
+				<li>Optimized data structures for performance using a <strong>custom ECS solution</strong> and
+					<b>Unity's
+						Native Collections</b>.
 				</li>
 			</ul>
 			<h4>Stack</h4>
 			<ul>
-				<li>Unity</li>
-				<li>C#</li>
+				<li><code>Unity</code></li>
+				<li><code>C#</code></li>
 			</ul>
 		</section>
-
 		<section class="project">
-			<video controls src="videos/procedural-tile-generation.mp4"></video>
-			<h2>Procedural 2D Tile Generation</h2>
-			<h3>Personal Project</h3>
+			<video controls src="videos/flipbook-shader.mp4"></video>
+			<h2>GPU-Instanced Flipbook Shader</h2>
+			<h3>Personal Project | 2024</h3>
 			<ul>
-				<li>Implemented grid-based tile generation logic with modular control over biome and terrain types.</li>
-				<li>Enabled instant runtime generation and visual feedback using Unity's Tilemap package and custom
-					solutions.</li>
-				<li>Focused on clean code architecture for scalability in larger procedural world systems.</li>
+				<li>Designed a custom unlit flipbook shader using <code>Texture2DArray</code> for GPU-instanced sprite
+					animations.</li>
+				<li>Each instance selects its own frame count and texture index, enabling diverse animated visuals in a
+					<strong>single draw call</strong>.
+				</li>
+				<li>Calculated UVs dynamically per frame and instance, supporting row-based flipbooks with adjustable
+					column limits.</li>
+				<li>Used alpha testing for rendering semi-transparent effects like particles or foliage efficiently.
+				</li>
 			</ul>
 			<h4>Stack</h4>
 			<ul>
-				<li>Unity</li>
-				<li>C#</li>
+				<li><code>Unity</code></li>
+				<li><code>HLSL</code></li>
 			</ul>
 		</section>
-
+		<section class="project">
+			<video controls src="videos/procedural-tile-generation.mp4"></video>
+			<h2>Procedural 2D Tile Generation</h2>
+			<h3>Personal Project | 2023</h3>
+			<ul>
+				<li>Implemented grid-based tile generation logic with modular control over biome and terrain types.</li>
+				<li>Enabled instant runtime generation and visual feedback using Unity's Tilemap package and
+					custom
+					solutions.</li>
+				<li>Focused on <em>clean code architecture</em> for scalability in larger procedural world systems.</li>
+			</ul>
+			<h4>Stack</h4>
+			<ul>
+				<li><code>Unity</code></li>
+				<li><code>C#</code></li>
+			</ul>
+		</section>
 		<section class="project">
 			<video controls src="videos/turn-based-astar-pathfinding.mp4"></video>
 			<h2>Turn-Based Grid A* Pathfinding</h2>
-			<h3>Personal Project</h3>
+			<h3>Personal Project | 2023</h3>
 			<ul>
-				<li>Developed A* pathfinding on a hexagonal grid with movement restrictions and turn-based logic.</li>
+				<li>Developed <code>A*</code> pathfinding on a <em>hexagonal grid</em> with movement restrictions and
+					turn-based logic.</li>
 				<li>Implemented unit actions including movement, attack, and wait states.</li>
 				<li>Designed a flexible grid system supporting various tile types and obstacles.</li>
 			</ul>
 			<h4>Stack</h4>
 			<ul>
-				<li>Unity</li>
-				<li>C#</li>
+				<li><code>Unity</code></li>
+				<li><code>C#</code></li>
 			</ul>
 		</section>
-
 		<section class="contact" id="contact">
 			<h2>Contact</h2>
 			<p>
@@ -259,10 +375,8 @@
 			</p>
 			<ul>
 				<li><a href="mailto:erkamuzuncayir@gmail.com">Email</a></li>
-				<li><a href="https://linkedin.com/in/erkamuzuncayir" target="_blank"
-						rel="noopener">LinkedIn</a></li>
-				<li><a href="https://github.com/erkamuzuncayir" target="_blank"
-						rel="noopener">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/erkamuzuncayir" target="_blank" rel="noopener">LinkedIn</a></li>
+				<li><a href="https://github.com/erkamuzuncayir" target="_blank" rel="noopener">GitHub</a></li>
 			</ul>
 		</section>
 

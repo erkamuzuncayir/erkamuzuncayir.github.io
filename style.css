@@ -20,6 +20,14 @@ body {
 	line-height: 1.4;
 }
 
+code {
+	font-family: 'JetBrains Mono', monospace;
+	background-color: #f0f0f0;
+	padding: 2px 5px;
+	border-radius: 4px;
+	font-size: 0.9em;
+}
+
 a {
 	color: var(--accent-blue);
 	text-decoration: none;
